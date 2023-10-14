@@ -5,10 +5,32 @@ import MainSection1 from './components/MainSection1';
 import MainSection2 from './components/MainSection2';
 import BackgroundImage from './components/BackgroundImage';
 import FooterMenus,{FooterMenuData} from './components/FooterMenus';
+import Navbar from './components/Navbar';
 
 
 
 function App() {
+
+  const datamenu = [
+    {
+      h1: "Buyer",
+      image: "/Icon1.png",
+    },
+    {
+      h1: "Seller",
+      image: "/Icon1.png",
+    },
+    {
+      h1: "Investors",
+      image: "/Icon1.png",
+    },
+    {
+      h1: "Property Management",
+      image: "/Icon1.png",
+    },
+  ];
+
+
   const cards=[
     {
       h1:"FHA 203K Full/Standard.",
@@ -95,6 +117,15 @@ const footMenus: FooterMenuData[] = [
 
   return (
     <>
+    <div className="flex-container">
+        {datamenu.map((item, index) => (
+          <Navbar  className="flex-item"
+            key={index}
+            title={item.h1}
+            imageUrl={item.image}
+          />
+        ))}
+      </div>
     <div>
     {data.map((item, index) => (
   <MainSection key={index} h1={item.h1} p={item.p} image={item.image} reverse={item.reverse} index={index}/>
