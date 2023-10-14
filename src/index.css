@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+  width: 100%;
+  margin: 0% !important;
+  padding: 0% !important;
+}
+.bg {
+width: 100% !important;
+background-image: url("./images/hero.png");
+background-repeat: no-repeat;
+background-size: 100% ;
+height: 400px;
+margin: 0% !important;
+padding: 0% !important;
+}
+h1{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around; /* Adjust this as needed */
+  align-items: center;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column; /* Stack the img and h1 vertically */
+  text-align: center; /* Center text horizontally */
+  padding: 10px; /* Add padding as needed */
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed (e.g., center, space-around) */
+  align-items: center; /* Align the title vertically in the middle */
+  flex: 1; /* Allow the content to take up all available space within the navbar */
+}
+/* Your CSS file */
+
+
+
+.navbar-content {
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+  gap: 4px; /* Add a 4px gap between the image and title */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-image {
+  max-width: 50px; /* Set the maximum width for the image as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-title {
+  color: white; /* Set the text color to white */
+  /* Additional text styles as needed */
+}
+
+
+.parent{
+    display:flex;
+   flex-Wrap:wrap;
+    justify-Content:center;
+     align-Items:center;
+     text-Align:center;
+    padding-top:3px;
+      gap:50px;
+}
+.Conects{
+  width:105px;
+   height:30px;
+    text-align:center;
+     padding:2px;
+      margin-left:20px;
+       margin-top:10px;
+        border: 1px solid #F8F9FA;
+        border-radius: 50px;
+}
+
+@media only screen and (max-width: 1300px){
+  .parent{
+      gap:10px;
+}
+}
+@media only screen and (max-width: 1000px){
+  .parent{
+      gap:0px;
+}
+h1{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 1000px){
+ 
+h1{
+ 
+  font-weight: 300;
+  font-size: 12px;
+}
 }

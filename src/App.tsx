@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MainSection from './components/MainSection';
 import MainSection1 from './components/MainSection1';
 import MainSection2 from './components/MainSection2';
 import BackgroundImage from './components/BackgroundImage';
 import FooterMenus,{FooterMenuData} from './components/FooterMenus';
+
 
 
 function App() {
@@ -116,7 +116,7 @@ const footMenus: FooterMenuData[] = [
     </div>
     </>
   );
-}
+};
 
 
 export default App;
