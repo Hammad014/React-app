@@ -14,13 +14,16 @@ const MainSection2: React.FC<MainSection2Props> = (props) => {
     <h5 style={{textAlign:"center", color:"#98002E"}} className="card-title font-fam">{props.h1} </h5>
     <br/>
   <img className="card-img-top" src={props.image}  alt="Card image cap"/>
-     <div className="card-body">
-    <p style={{}} className="card-text font-fam">{props.detail}</p>
-  </div>
+    <br/>
+    <p className="card-text font-fam">{props.detail}</p>
+  
 </div>
     <br/>
     <br/>
+    <br/>
+    <br/>
     </div>
+    
     </>
    
   );

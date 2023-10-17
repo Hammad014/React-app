@@ -22,8 +22,8 @@ export interface FooterMenuData {
           <li key={index} style={{ marginBottom: '10px' }}>
            
             <ul className='font-fam' style={{lineHeight:"40px", listStyleType: 'none', padding: 0, marginLeft: '20px' }}>
-              <li className='list-head' style={{ marginBottom: '5px' }}>{menu.p0}</li>
-              <br/>
+              <li className='list-head' style={{ marginBottom: '1.8rem' }}>{menu.p0}</li>
+              
               <a href='#'><li style={{ marginBottom: '5px' }}>{menu.p}</li></a>
               <a href='#'><li style={{ marginBottom: '5px' }}>{menu.p1}</li></a>
               <a href='#'><li style={{ marginBottom: '5px' }}>{menu.p2}</li></a>
@@ -51,13 +51,13 @@ export interface FooterMenuData {
     
     <div className='foot-textarea'>
     <textarea
-  style={{ maxWidth: "18rem", height: "100px", border: "none" }}
-  className=""
-  placeholder="  Leave a reply..."
+  style={{ width: "22rem", height: "100px", border: "none",fontSize: "18px" }}
+  className="font-fam p-3 "
+  placeholder={`Leave a review...`}
 ></textarea>
  
      <div className='mt-2' style={{ display: 'flex', justifyContent: 'flex-end' }}>
-     <button style={{borderRadius:"25px"}} className='d-block w-50'>Post</button>
+     <button style={{borderRadius:"25px"}} className='d-block w-50 p-1'>Post</button>
      </div>
     </div>
       </div>
@@ -77,11 +77,11 @@ export interface FooterMenuData {
 <br/>
 <div className='d-flex flex-wrap m-auto justify-content-center mt-5' style={{ gap:"5rem"}}>
 <div>
-    <h5 className='font-fam'>Sales & Support</h5>
-    <h1 className='font-fam' style={{color:"#98002E"}}>732.475.7705</h1>
+    <p style={{fontSize:"24px", lineHeight:"20px"}} className='text-center font-fam font-weight-light'>Sales & Support</p>
+    <h1 className='font-fam' style={{color:"#98002E" }}>732.475.7705</h1>
 </div>
 <div>
-    <h5 className='font-fam'>contact@MikeKoenRealtyNJ.com</h5>
+    <p style={{fontSize:"20px",lineHeight:"20px", cursor:"pointer"}}  className='font-fam font-weight-light '><u>contact@MikeKoenRealtyNJ.com</u></p>
     <div className='d-flex pt-2 foot-social'>
         <img src='/imagesicons/Facebook (1).png'/>
         <img src='/imagesicons/Vector (3).png'/>
@@ -92,7 +92,7 @@ export interface FooterMenuData {
 </div>
 </div>
 
-<div className='mt-5 mb-5 d-flex flex-wrap justify-content-center font-fam' style={{gap:"30px"}}>
+<div className='mt-5 mb-5 d-flex flex-wrap justify-content-center font-fam font-weight-light' style={{gap:"30px"}}>
     <a href='#'><p>Privacy Policy</p></a>
     <a href='#'><p>Terms of Use</p></a>
     <a href='#'><p>Site Map</p></a>

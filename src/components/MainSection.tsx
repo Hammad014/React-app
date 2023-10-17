@@ -13,6 +13,7 @@ const MainSection: React.FC<MainSectionProps> = (props) => {
   const fontSize = (index: number) => (index >= 1 && index <= 3) ? "26px" : "43px";
   const fontSizep = (index: number) => (index >= 1 && index <= 3) ? "16px" : "24px";
   const fontWeight = (index: number) => (index >= 1 && index <= 3) ? "600" : "300";
+  const fontWeightp = (index: number) => (index < 1) ? "500" : "400";
 
   return (
     <>
@@ -23,7 +24,7 @@ const MainSection: React.FC<MainSectionProps> = (props) => {
               <h1 className='text-center custom-heading' style={{ color: "#98002E", fontSize: fontSize(props.index), fontWeight: fontWeight(props.index) }}>
                 {props.h1}
               </h1>
-              <p className='text-center custom-paragraph' style={{fontSize: fontSizep(props.index)}}>{props.p}</p>
+              <p className='text-center custom-paragraph' style={{fontSize: fontSizep(props.index),fontWeight: fontWeightp(props.index)}}>{props.p}</p>
             </div>
           </div>
           <div className="col-md-6">

@@ -16,8 +16,8 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   minHeight: '600px',
-  width: '82%', // Set a maximum width
-  margin: '0 auto', // Center horizontally
+  width: '69rem', 
+  margin: '0 auto', 
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -30,7 +30,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
     <div className='backgroundimage-style' style={backgroundStyle}>
       <h2 className='font-fam background-font' style={{color:"#FFFFFF"}}>{title}</h2>
       <br/>
-      <button className='font-fam background-btn p-2' style={{color:"#98002E"}}>{buttonText}</button>
+      <button className='font-fam background-btn' style={{color:"#98002E", fontSize:"20px"}}>{buttonText}</button>
     </div>
     <br/>
     <br/>

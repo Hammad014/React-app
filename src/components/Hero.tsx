@@ -30,19 +30,18 @@ const Hero: React.FC<HeroProps> = ({ background, logo, className, datamenu }) =>
     <>
 
 
-
       <div style={navbarStyle} className='hero'>
       
         <nav className={`navbar ${className}`}>
-          <div className="nav d-flex m-auto align-items-center p-0" style={{gap:"3rem"}}>
+          <div className="nav d-flex m-auto align-items-center p-0" style={{gap:"2rem"}}>
             <img className='m-0 p-0' src={logo} alt="" />
             <div className="animated-bar" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <div className={` ${showMenu ? 'show-menu' : ''}`}>
-            <ul className={`mt-3 menu d-flex text-white`}>
+      <div>
+            <ul className={`mt-3 menu d-flex text-white ${showMenu ? 'show-menu' : ''}`}>
         {datamenu.map((item, index) => (
           <li key={index} className="menu-item m-0 p-0" style={{cursor:"pointer"}}>
             <span className=''>{item.h1}</span>
@@ -63,10 +62,11 @@ const Hero: React.FC<HeroProps> = ({ background, logo, className, datamenu }) =>
 </button>
           </div>
         </nav>
-       
-        <div className='header-bottom d-flex align-items-center' style={{marginTop:"8rem", marginLeft:"3rem"}}>
-          <h1 className='font-fam text-white display-3 font-weight-bold'>Investors</h1>
-          <button className='text-white font-fam' style={{
+        
+        
+        <div className='header-bottom d-flex justify-content-center align-items-center' style={{marginTop:"8rem", marginRight:"50rem"}}>
+         <h1 className='font-fam text-white display-3 font-weight-bold'>Investors</h1> 
+         <button className='text-white font-fam' style={{
          border: '2px solid white',
          background: 'transparent', 
          borderRadius: '30px', 
@@ -76,6 +76,7 @@ const Hero: React.FC<HeroProps> = ({ background, logo, className, datamenu }) =>
           Get Started
         </button>
         </div>
+  
       </div>
     
     </>

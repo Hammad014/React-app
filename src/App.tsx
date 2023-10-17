@@ -151,12 +151,14 @@ const footMenus: FooterMenuData[] = [
 ))}
 
       <MainSection1/>
-      <div className='d-flex flex-row justify-content-center flex-wrap'>
+
+      <div className='d-flex flex-row justify-content-center text-left flex-wrap'>
       {cards.map((item,index)=>(
         <MainSection2 key={index} h1={item.h1} image={item.image} detail={item.detail}
           />
       ))}
       </div>
+
     <BackgroundImage
       backgroundImage="/Frame%2019.png"
       title="Donating a Property?"
