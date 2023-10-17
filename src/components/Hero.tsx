@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ background, logo, className, datamenu }) =>
         </nav>
         
         
-        <div className='header-bottom d-flex justify-content-center align-items-center' style={{marginTop:"8rem", marginRight:"50rem"}}>
+        <div className='header-bottom d-flex justify-content-center align-items-center' style={{marginTop:"8rem"}}>
          <h1 className='font-fam text-white display-3 font-weight-bold'>Investors</h1> 
          <button className='text-white font-fam' style={{
          border: '2px solid white',

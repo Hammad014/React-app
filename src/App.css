@@ -80,7 +80,9 @@
   display: none;
   cursor: pointer;
 }
-
+.header-bottom{
+  margin-right: 50rem;
+}
 
 
 @media(max-width:1300px){
@@ -104,6 +106,9 @@ flex-wrap: wrap;
  }
  .header-bottom{
   margin-top: 3rem !important;
+ }
+ .header-bottom{
+  margin-right: 25rem;
  }
 }
 
@@ -137,6 +142,7 @@ margin: auto;
 }
 .header-bottom{
   margin-top: 8rem !important;
+  margin-right: 20rem ;
  }
 }
 
@@ -210,5 +216,7 @@ margin: auto;
 
   .header-bottom {
     margin-top: 8rem !important;
+    margin-right: 2rem;
   }
+
 }
