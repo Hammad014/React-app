@@ -12,7 +12,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
   buttonText,
 }) => {
   const backgroundStyle: any = {
-    backgroundImage: `url(${backgroundImage})`,
+  backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   minHeight: '600px',
@@ -27,10 +27,10 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
 
   return (
     <>
-    <div style={backgroundStyle}>
+    <div className='backgroundimage-style' style={backgroundStyle}>
       <h2 className='font-fam background-font' style={{color:"#FFFFFF"}}>{title}</h2>
       <br/>
-      <button className='font-fam background-btn' style={{color:"#98002E"}}>{buttonText}</button>
+      <button className='font-fam background-btn p-2' style={{color:"#98002E"}}>{buttonText}</button>
     </div>
     <br/>
     <br/>

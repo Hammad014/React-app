@@ -17,7 +17,7 @@ export interface FooterMenuData {
   const FooterMenus: React.FC<FooterMenusProps> = ({ footMenus }) => {
     return (
         <>
-      <ul className='d-flex flex-wrap' style={{listStyleType: 'none', padding: 0, justifyContent:"center" }}>
+      <ul className='d-flex flex-wrap' style={{listStyleType: 'none', padding: 0, justifyContent:"center",gap:"5rem" }}>
         {footMenus.map((menu, index) => (
           <li key={index} style={{ marginBottom: '10px' }}>
            
@@ -51,13 +51,13 @@ export interface FooterMenuData {
     
     <div className='foot-textarea'>
     <textarea
-  style={{ width: "300px", height: "100px", border: "none" }}
+  style={{ maxWidth: "18rem", height: "100px", border: "none" }}
   className=""
   placeholder="  Leave a reply..."
 ></textarea>
  
      <div className='mt-2' style={{ display: 'flex', justifyContent: 'flex-end' }}>
-     <button style={{borderRadius:"25px"}} className='d-block w-25'>Post</button>
+     <button style={{borderRadius:"25px"}} className='d-block w-50'>Post</button>
      </div>
     </div>
       </div>
@@ -65,24 +65,24 @@ export interface FooterMenuData {
 <br/>
 <br/>
 
-<div className='d-flex justify-content-center'>
-    <img src='/Frame 110.png'/>   
+<div className='d-flex justify-content-center foot-text'>
+    <img className='imagevideo' src='/Frame 110.png'/>   
 </div>
 <br/>
 <br/>
 <div className='d-flex justify-content-center mt-5'>
-<img src='/linked to home logo.png'/>
+<img className='imagedownvideo' src='/linked to home logo.png'/>
 </div>
 <br/>
 <br/>
-<div className='d-flex m-auto justify-content-center mt-5'>
+<div className='d-flex flex-wrap m-auto justify-content-center mt-5' style={{ gap:"5rem"}}>
 <div>
     <h5 className='font-fam'>Sales & Support</h5>
     <h1 className='font-fam' style={{color:"#98002E"}}>732.475.7705</h1>
 </div>
 <div>
     <h5 className='font-fam'>contact@MikeKoenRealtyNJ.com</h5>
-    <div className='d-flex pt-2' style={{ gap:"40px"}}>
+    <div className='d-flex pt-2 foot-social'>
         <img src='/imagesicons/Facebook (1).png'/>
         <img src='/imagesicons/Vector (3).png'/>
         <img src='/imagesicons/Pinterest.png'/>

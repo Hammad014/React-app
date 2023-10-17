@@ -16,7 +16,7 @@ const MainSection: React.FC<MainSectionProps> = (props) => {
 
   return (
     <>
-      <div className="container">
+      <div className="container mt-5">
         <div className={rowClass}>
           <div className="col-md-6 d-flex align-items-center">
             <div className="content">
@@ -35,7 +35,6 @@ const MainSection: React.FC<MainSectionProps> = (props) => {
           </div>
         </div>
       </div>
-      <br />
       <br />
       <br />
       <br />

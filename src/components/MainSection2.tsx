@@ -10,7 +10,7 @@ const MainSection2: React.FC<MainSection2Props> = (props) => {
   return (
     <>
     <div style={{maxWidth:"100%"}}>
-    <div className="card" style={{width:" 32rem", border:"none"}}>
+    <div className="card" style={{maxWidth:" 32rem", border:"none"}}>
     <h5 style={{textAlign:"center", color:"#98002E"}} className="card-title font-fam">{props.h1} </h5>
     <br/>
   <img className="card-img-top" src={props.image}  alt="Card image cap"/>
